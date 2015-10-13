@@ -7385,18 +7385,18 @@ Transform:
   - {fileID: 858526413}
   - {fileID: 1126308064}
   - {fileID: 1361166189}
+  - {fileID: 1516693932}
   - {fileID: 766455628}
   - {fileID: 1539221215}
   - {fileID: 108104137}
-  - {fileID: 1516693932}
   - {fileID: 1446378532}
+  - {fileID: 1757771542}
   - {fileID: 1611023290}
   - {fileID: 1711600684}
-  - {fileID: 1757771542}
   - {fileID: 1746555963}
   - {fileID: 1890016444}
-  - {fileID: 298566247}
   - {fileID: 1773830301}
+  - {fileID: 298566247}
   - {fileID: 242913733}
   - {fileID: 395244975}
   - {fileID: 2087136593}
@@ -35304,7 +35304,7 @@ Transform:
   m_Children:
   - {fileID: 780389061}
   m_Father: {fileID: 249687102}
-  m_RootOrder: 9
+  m_RootOrder: 6
 --- !u!4 &1517878971 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: c44a59af4d2c3f346994f506fb515fa5, type: 2}
@@ -42477,7 +42477,7 @@ Transform:
   m_Children:
   - {fileID: 1925632178}
   m_Father: {fileID: 249687102}
-  m_RootOrder: 13
+  m_RootOrder: 11
 --- !u!4 &1758737903 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e85d3416093197240b7c0f518b5ce079, type: 3}
@@ -42756,7 +42756,7 @@ Transform:
   m_Children:
   - {fileID: 524712144}
   m_Father: {fileID: 249687102}
-  m_RootOrder: 17
+  m_RootOrder: 16
 --- !u!4 &1776626080 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400004, guid: b181fc2d659bfdd49a7da31f51afa883, type: 2}
