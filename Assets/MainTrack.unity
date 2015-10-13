@@ -7094,7 +7094,8 @@ Camera:
 --- !u!114 &225008907
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11443252, guid: 23f87683ee1f6984c83caf2ee59f9b78,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 225008904}
   m_Enabled: 1
@@ -7133,7 +7134,8 @@ MonoBehaviour:
 --- !u!114 &225008908
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11475410, guid: 23f87683ee1f6984c83caf2ee59f9b78,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 225008904}
   m_Enabled: 1
