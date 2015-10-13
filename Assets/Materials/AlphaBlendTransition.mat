@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: AlphaBlendTransition
+  m_Shader: {fileID: 4800000, guid: 73a20c05cfe3647da959962d0e9e51f8, type: 3}
+  m_ShaderKeywords: []
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _BaseTexture
+        second:
+          m_Texture: {fileID: 2800000, guid: 986a817d26106f7449094664650a947e, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OverlayTexture
+        second:
+          m_Texture: {fileID: 2800000, guid: d254210ad440ae5409493d378786d466, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Blend
+        second: 0
+    m_Colors: {}

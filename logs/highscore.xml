@@ -1,0 +1,24 @@
+<highscore>
+  <level name="MainTrack">
+    <data playerName="NewPlayer" playerID="6">
+      <lap time="118815" />
+      <lap time="107197" />
+      <lap time="109581" />
+    </data>
+    <data playerName="NewPlayer" playerID="11">
+      <lap time="108865" />
+      <lap time="104231" />
+      <lap time="102715" />
+    </data>
+    <data playerName="NewPlayer" playerID="1">
+      <lap time="111946" />
+      <lap time="109617" />
+      <lap time="125713" />
+    </data>
+    <data playerName="NewPlayer" playerID="3">
+      <lap time="105179" />
+      <lap time="105716" />
+      <lap time="104115" />
+    </data>
+  </level>
+</highscore>
