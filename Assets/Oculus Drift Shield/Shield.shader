@@ -94,12 +94,14 @@
 
 		void vert (inout appdata_full v, out Input o)
 		{
-
+			UNITY_INITIALIZE_OUTPUT(Input, o);
 		}
 		           
 
 		void surf (Input IN, inout EditorSurfaceOutput o)
 		{
+			
+			
 		    o.Albedo = fixed3(0.0,0.0,0.0);
 		    o.Normal = fixed3(0.0,0.0,1.0);
 		    o.Emission = 0.0;
@@ -109,11 +111,12 @@
 		    float4 ScreenDepthDiff0= LinearEyeDepth (tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(IN.screenPos)).r) - IN.screenPos.z;
 		    float4 Saturate0=fixed4(0.3,0.3,0.3,1.0);//
 		    float4 Fresnel0_1_NoInput = fixed4(0,0,1,1);
-		    float4 Fresnel0=float4( 1.0 - dot( normalize( float4(IN.viewDir, 1.0).xyz), normalize( Fresnel0_1_NoInput.xyz ) ) );
-		    float4 Step0=step(Fresnel0,float4( 1.0 ));
-		    float4 Clamp0=clamp(Step0,_Inside.xxxx,float4( 1.0 ));
+			float a = (1.0 - dot( normalize( float4( IN.viewDir.xyz, 1.0 ).xyz ), normalize( Fresnel0_1_NoInput.xyz ) ));
+		    float4 Fresnel0= float4( a,a,a,a );
+		    float4 Step0=step(Fresnel0, float4( 1.0, 1.0, 1.0, 1.0 ));
+		    float4 Clamp0=clamp(Step0,_Inside.xxxx,float4( 1.0, 1.0, 1.0, 1.0 ));
 		    float4 Pow0=pow(Fresnel0,_Rim.xxxx);
-		    float4 Multiply5=_Time * _Speed.xxxx;
+		    float4 Multiply5=_Time * _Speed.xxxx; 
 		    float4 UV_Pan0=float4((IN.uv_Texture.xyxy).x,(IN.uv_Texture.xyxy).y + Multiply5.x,(IN.uv_Texture.xyxy).z,(IN.uv_Texture.xyxy).w);
 		    float4 Multiply1=UV_Pan0 * _Tile.xxxx;
 		    float4 Tex2D0=tex2D(_Texture,Multiply1.xy);

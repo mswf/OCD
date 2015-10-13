@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: ShieldMaterial
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 5b09a64eebbec47ca8bbd77bfccc85cb, type: 3}
   m_ShaderKeywords: _ALPHABLEND_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: 3000
@@ -36,13 +36,6 @@ Material:
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Texture
-        second:
-          m_Texture: {fileID: 2800000, guid: d492a66ce399c4e75b8a414a382b3f27, type: 3}
-          m_Scale: {x: 2, y: -.5}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -86,6 +79,13 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Texture
+        second:
+          m_Texture: {fileID: 2800000, guid: d492a66ce399c4e75b8a414a382b3f27, type: 3}
+          m_Scale: {x: 2, y: -.5}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -99,26 +99,6 @@ Material:
         first:
           name: _Cutoff
         second: .95599997
-      data:
-        first:
-          name: _Inside
-        second: 0
-      data:
-        first:
-          name: _Rim
-        second: 0
-      data:
-        first:
-          name: _Speed
-        second: 5
-      data:
-        first:
-          name: _Tile
-        second: 2.74999952
-      data:
-        first:
-          name: _Strength
-        second: 1.33928573
       data:
         first:
           name: _Parallax
@@ -155,6 +135,26 @@ Material:
         first:
           name: _Metallic
         second: 0
+      data:
+        first:
+          name: _Inside
+        second: 1
+      data:
+        first:
+          name: _Rim
+        second: .699999988
+      data:
+        first:
+          name: _Speed
+        second: 5
+      data:
+        first:
+          name: _Tile
+        second: 2.74999952
+      data:
+        first:
+          name: _Strength
+        second: 1.33928573
     m_Colors:
       data:
         first:
