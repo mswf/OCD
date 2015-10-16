@@ -7217,19 +7217,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_LocalRotation.x
-      value: .00468663871
+      value: .00468663825
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .660822153
+      value: .660822093
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.0676349998
+      value: -.0676349923
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .747474253
+      value: .747474194
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_RootOrder
@@ -9087,19 +9087,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -.114105843
+      value: -.114105858
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .555619717
+      value: .555619776
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.145328537
+      value: -.145328552
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .810645461
+      value: .81064558
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_RootOrder
@@ -10876,23 +10876,24 @@ AudioSource:
   m_GameObject: {fileID: 373851630}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300001, guid: da4275a9cd13d104285f357fbd567e42,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: efcebec924df02844b8e0a6d921bc584, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .312999994
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 0
+  BypassEffects: 1
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -21004,19 +21005,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -.114105843
+      value: -.114105858
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .555619717
+      value: .555619776
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.145328537
+      value: -.145328552
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .810645461
+      value: .81064558
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df1669c719d2a4047bd52d1886b2becb, type: 2}
       propertyPath: m_RootOrder
