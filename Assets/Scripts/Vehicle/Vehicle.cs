@@ -218,14 +218,6 @@ public class Vehicle : IVehicle
 		gameObject.layer = 11;
 
 		if (ovrCamController != null)	ovrCamStartPos = ovrCamController.transform.localPosition;
-
-		if (isPlayer)
-		{
-			_particleSystemWind = particleSystemWind.GetComponent<ParticleSystem>();
-		}
-
-
-
 	}
 
 	/// <summary>
@@ -998,6 +990,11 @@ public class Vehicle : IVehicle
 	{
 		if (particleSystemWind != null)
 		{
+			if (_particleSystemWind == null)
+			{
+				_particleSystemWind = particleSystemWind.GetComponent<ParticleSystem>();
+			}
+
 			float nAlpha = 0.0f;
 			if (currentSpeed > 0.65f) nAlpha = currentSpeed / _currentMaxSpeed;
 			if (nAlpha > 0.3f) nAlpha = 0.3f;
