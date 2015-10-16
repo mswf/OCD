@@ -12,6 +12,8 @@ public class DeviceInput : MonoBehaviour
 	}
 	
 	public Axis axis;
+	public GameObject cameraRig;
+	private OVRCameraRig rig;
 	private Profile currProfile = new Profile();
 	private float _leftMiddle;
 	private float _rightMiddle;
@@ -25,17 +27,17 @@ public class DeviceInput : MonoBehaviour
 		}
 	}
 	static private float _orientation = 0;
-	static private bool _isDisabled = false;
+	static private bool _isVRControlsDisabled = false;
 	static public bool isDisabled
 	{
 		get
 		{
-			return _isDisabled ;
+			return _isVRControlsDisabled ;
 		}
 		
 		set
 		{
-			_isDisabled = value;
+			_isVRControlsDisabled = value;
 		}
 	}
 	
@@ -62,7 +64,9 @@ public class DeviceInput : MonoBehaviour
 			axis = Axis.x;
 			break;
 		}
-		
+
+		rig = cameraRig.GetComponent<OVRCameraRig>();
+
 		WeikiesRiftHack.ResetOrientation();
 	}
 	
@@ -71,7 +75,7 @@ public class DeviceInput : MonoBehaviour
 	{
 		if (Input.GetKeyDown("o"))
 		{
-			_isDisabled = !_isDisabled;
+			_isVRControlsDisabled = !_isVRControlsDisabled;
 		}
 	}
 	
@@ -81,10 +85,12 @@ public class DeviceInput : MonoBehaviour
 		float multiplier = 3f;
 		
 		//OVRDevice.SensorCount > 0
-		if (WeikiesRiftHack.IsConnected() && !_isDisabled)
+		if (WeikiesRiftHack.IsConnected() && !_isVRControlsDisabled)
 		{
-			Quaternion q = WeikiesRiftHack.GetOrientation();
-			
+			//Quaternion q = WeikiesRiftHack.GetOrientation();
+
+			Quaternion q = rig.centerEyeAnchor.localRotation;
+
 			switch (axis)
 			{
 			case Axis.x:

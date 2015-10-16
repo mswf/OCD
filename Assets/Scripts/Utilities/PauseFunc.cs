@@ -9,7 +9,7 @@ public class PauseFunc : MonoBehaviour
 	public GameObject textPrefab;
 	public GameObject pictureOVR;
 	public GameObject _OVRPictureLocation;
-	public GameObject startLocation;
+	public GameObject startMenuLocation;
 	
 	private GameObject _OVRPicture;
 	//public Texture image;
@@ -139,11 +139,11 @@ public class PauseFunc : MonoBehaviour
 	private void showText(int amount)
 	{
 		listText = new GameObject[amount];
-		Quaternion rot = GameObject.Find("CameraRight").transform.rotation;
+		Quaternion rot = GameObject.Find("CenterEyeAnchor").transform.rotation; //Old one CameraRight
 		
 		for (int i = 0; i < amount; i++)
 		{
-			listText[i] = Instantiate(textPrefab, startLocation.transform.position + new Vector3(0, -i * 0.2f, 0), rot) as GameObject;
+			listText[i] = Instantiate(textPrefab, startMenuLocation.transform.position + new Vector3(0, -i * 0.2f, 0), rot) as GameObject;
 		}
 	}
 	

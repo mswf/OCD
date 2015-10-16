@@ -66,7 +66,7 @@ public class Vehicle : IVehicle {
 	public GameObject ovrCamController;
 	private Vector3 ovrCamStartPos;
 	public float camEffectY = 0.0f;
-	public float camEffectZ = -1.2f;
+	public float camEffectZ = -0.9f; // This value was used for the effect
 
 	//shield effect
 	public GameObject shieldObj;

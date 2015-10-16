@@ -16,6 +16,7 @@ public class WeikiesRiftHack
 	public static Quaternion GetOrientation()
 	{
 		OVRPose pose = OVRManager.tracker.GetPose(0);
+		//Debug.Log ("Position is tracked: " + OVRManager.tracker.isPositionTracked);
 		return pose.orientation;
 	}
 	

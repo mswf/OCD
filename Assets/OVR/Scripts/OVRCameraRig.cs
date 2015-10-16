@@ -131,9 +131,7 @@ public class OVRCameraRig : MonoBehaviour
 	private void UpdateAnchors()
 	{
 		bool monoscopic = OVRManager.instance.monoscopic;
-
 		OVRPose tracker = OVRManager.tracker.GetPose(0d);
-
 		trackerAnchor.localRotation = tracker.orientation;
 		centerEyeAnchor.localRotation = VR.InputTracking.GetLocalRotation(VR.VRNode.CenterEye);
         leftEyeAnchor.localRotation = monoscopic ? centerEyeAnchor.localRotation : VR.InputTracking.GetLocalRotation(VR.VRNode.LeftEye);
@@ -156,27 +154,38 @@ public class OVRCameraRig : MonoBehaviour
 
 	public void EnsureGameObjectIntegrity()
 	{
-		if (trackingSpace == null)
-			trackingSpace = ConfigureRootAnchor(trackingSpaceName);
+		if (trackingSpace == null) 
+		{
+			trackingSpace = ConfigureRootAnchor (trackingSpaceName);
+		}
 
-		if (leftEyeAnchor == null)
-            leftEyeAnchor = ConfigureEyeAnchor(trackingSpace, VR.VRNode.LeftEye);
+		if (leftEyeAnchor == null) 
+		{
+			leftEyeAnchor = ConfigureEyeAnchor (trackingSpace, VR.VRNode.LeftEye);
+		}
 
-		if (centerEyeAnchor == null)
-            centerEyeAnchor = ConfigureEyeAnchor(trackingSpace, VR.VRNode.CenterEye);
+		if (centerEyeAnchor == null) 
+		{
+			centerEyeAnchor = ConfigureEyeAnchor (trackingSpace, VR.VRNode.CenterEye);
+		}
 
-		if (rightEyeAnchor == null)
-            rightEyeAnchor = ConfigureEyeAnchor(trackingSpace, VR.VRNode.RightEye);
+		if (rightEyeAnchor == null) 
+		{
+			rightEyeAnchor = ConfigureEyeAnchor (trackingSpace, VR.VRNode.RightEye);
+		}
 
-		if (leftHandAnchor == null)
-            leftHandAnchor = ConfigureHandAnchor(trackingSpace, OVRPlugin.Node.LeftHand);
-
-		if (rightHandAnchor == null)
-            rightHandAnchor = ConfigureHandAnchor(trackingSpace, OVRPlugin.Node.RightHand);
-
-		if (trackerAnchor == null)
-			trackerAnchor = ConfigureTrackerAnchor(trackingSpace);
-
+		if (leftHandAnchor == null) 
+		{;
+			leftHandAnchor = ConfigureHandAnchor (trackingSpace, OVRPlugin.Node.LeftHand);
+		}
+		if (rightHandAnchor == null) 
+		{
+			rightHandAnchor = ConfigureHandAnchor (trackingSpace, OVRPlugin.Node.RightHand);
+		}
+		if (trackerAnchor == null) 
+		{
+			trackerAnchor = ConfigureTrackerAnchor (trackingSpace);
+		}
         if (leftEyeCamera == null || rightEyeCamera == null)
 		{
 			Camera centerEyeCamera = centerEyeAnchor.GetComponent<Camera>();
@@ -214,7 +223,6 @@ public class OVRCameraRig : MonoBehaviour
 	private Transform ConfigureRootAnchor(string name)
 	{
 		Transform root = transform.Find(name);
-
 		if (root == null)
 		{
 			root = new GameObject(name).transform;
