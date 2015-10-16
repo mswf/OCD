@@ -1,26 +1,24 @@
 fileFormatVersion: 2
-guid: 878c751d750f2f04d8f18ba5c02d56fd
-timeCreated: 1444739150
-licenseType: Free
+guid: ffa9c02760c2b4e8eb9814ec06c4b05b
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 1
     enableMipMap: 1
-    linearTexture: 1
-    correctGamma: 0
+    linearTexture: 0
+    correctGamma: 1
     fadeOut: 0
     borderMipMap: 0
-    mipMapFadeDistanceStart: 3
-    mipMapFadeDistanceEnd: 9
+    mipMapFadeDistanceStart: 0
+    mipMapFadeDistanceEnd: 2
   bumpmap:
-    convertToNormalMap: 1
-    externalNormalMap: 1
-    heightScale: .0379999988
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
     normalMapFilter: 0
   isReadable: 0
-  grayScaleToAlpha: 0
+  grayScaleToAlpha: 1
   generateCubemap: 0
   cubemapConvolution: 0
   cubemapConvolutionSteps: 8
@@ -30,7 +28,7 @@ TextureImporter:
   maxTextureSize: 512
   textureSettings:
     filterMode: 2
-    aniso: 5
+    aniso: 8
     mipBias: 0
     wrapMode: 0
   nPOTScale: 0
@@ -45,7 +43,7 @@ TextureImporter:
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   textureType: -1
   buildTargetSettings: []
   spriteSheet:

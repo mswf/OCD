@@ -40,7 +40,7 @@ QualitySettings:
     shadowDistance: 400
     shadowNearPlaneOffset: 2
     shadowCascade2Split: .333333343
-    shadowCascade4Split: {x: .0666666701, y: .199999988, z: .466666639}
+    shadowCascade4Split: {x: .00907504745, y: .1293194, z: .587085724}
     blendWeights: 2
     textureQuality: 0
     anisotropicTextures: 1
@@ -54,4 +54,19 @@ QualitySettings:
     maximumLODLevel: 0
     particleRaycastBudget: 256
     excludedTargetPlatforms: []
-  m_PerPlatformDefaultQuality: {}
+  m_PerPlatformDefaultQuality:
+    Android: 2
+    BlackBerry: 0
+    FlashPlayer: 3
+    GLES Emulation: 3
+    PS3: 3
+    Samsung TV: 0
+    Standalone: 3
+    Tizen: 0
+    WP8: 0
+    Web: 3
+    WebGL: 0
+    Wii: 3
+    Windows Store Apps: 0
+    XBOX360: 3
+    iPhone: 2
