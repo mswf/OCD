@@ -138,23 +138,23 @@ Material:
       data:
         first:
           name: _Inside
-        second: 1
+        second: 1.27999997
       data:
         first:
           name: _Rim
-        second: .699999988
+        second: .676999986
       data:
         first:
           name: _Speed
-        second: 5
+        second: 4.55000019
       data:
         first:
           name: _Tile
-        second: 2.74999952
+        second: 2.82999992
       data:
         first:
           name: _Strength
-        second: 1.33928573
+        second: 1.98000002
     m_Colors:
       data:
         first:
@@ -163,4 +163,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .366789579, g: .623906791, b: .977944791, a: 0}
+        second: {r: .544128478, g: .867955267, b: 1, a: 0}
