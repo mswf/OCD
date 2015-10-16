@@ -17,6 +17,7 @@ public class Pickup : MonoBehaviour {
 	{
 		onL = sign.GetComponent<Light>().color;
 	}
+	/*
 	
 	void FixedUpdate () 
 	{
@@ -31,8 +32,9 @@ public class Pickup : MonoBehaviour {
 				sign.transform.localPosition = new Vector3 (0,1f* pulseBase+ 3f,0);
 			}
 		}
+
 	}
-	
+		 * */
 	protected void onMaterial()
 	{
 		ring.GetComponent<Renderer>().material = onMat;
