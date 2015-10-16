@@ -145,8 +145,8 @@ RenderSettings:
   m_AmbientSkyColor: {r: .772549093, g: .878431439, b: .956862807, a: 1}
   m_AmbientEquatorColor: {r: .117647052, g: .117647052, b: .117647052, a: 1}
   m_AmbientGroundColor: {r: .117647052, g: .117647052, b: .117647052, a: 1}
-  m_AmbientIntensity: 1.23000002
-  m_AmbientMode: 1
+  m_AmbientIntensity: .200000003
+  m_AmbientMode: 0
   m_SkyboxMaterial: {fileID: 2100000, guid: 8df213e7be67ab24da8c4ef604049b1e, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
@@ -154,7 +154,7 @@ RenderSettings:
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
+  m_DefaultReflectionResolution: 512
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
@@ -168,7 +168,7 @@ LightmapSettings:
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
-    m_IndirectOutputScale: 1
+    m_IndirectOutputScale: .5
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
     m_EnvironmentLightingMode: 1
@@ -178,7 +178,7 @@ LightmapSettings:
     serializedVersion: 3
     m_Resolution: 1
     m_BakeResolution: 50
-    m_TextureWidth: 512
+    m_TextureWidth: 2048
     m_TextureHeight: 1024
     m_AOMaxDistance: 1
     m_Padding: 2
@@ -188,7 +188,8 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
-  m_LightmapSnapshot: {fileID: 0}
+  m_LightmapSnapshot: {fileID: 112000001, guid: e172d829b8636b94c9553b5f97ddd7e2,
+    type: 2}
   m_RuntimeCPUUsage: 100
 --- !u!196 &5
 NavMeshSettings:
@@ -17108,7 +17109,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 6
   m_Type: 1
-  m_Color: {r: .381453276, g: .778744578, b: .917647064, a: 1}
+  m_Color: {r: .917647064, g: .814106226, b: .381453276, a: 1}
   m_Intensity: .349196374
   m_Range: 10
   m_SpotAngle: 30
@@ -17127,7 +17128,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294959101
   m_Lightmapping: 1
-  m_BounceIntensity: 1
+  m_BounceIntensity: .100000001
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
@@ -24001,15 +24002,15 @@ Light:
   m_Enabled: 1
   serializedVersion: 6
   m_Type: 1
-  m_Color: {r: .812979639, g: .900104821, b: .925490201, a: 1}
-  m_Intensity: .906333148
+  m_Color: {r: .925490201, g: .922386467, b: .812979639, a: 1}
+  m_Intensity: 1.41999996
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
     m_Resolution: -1
-    m_Strength: .5
+    m_Strength: .861999989
     m_Bias: .25
     m_NormalBias: .400000006
   m_Cookie: {fileID: 0}

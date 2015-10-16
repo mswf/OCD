@@ -9,18 +9,18 @@ QualitySettings:
   - serializedVersion: 2
     name: Menu
     pixelLightCount: 1
-    shadows: 1
+    shadows: 2
     shadowResolution: 2
     shadowProjection: 1
     shadowCascades: 2
-    shadowDistance: 40
+    shadowDistance: 100
     shadowNearPlaneOffset: 2
     shadowCascade2Split: .333333343
     shadowCascade4Split: {x: .0666666701, y: .200000003, z: .466666669}
     blendWeights: 2
     textureQuality: 0
-    anisotropicTextures: 0
-    antiAliasing: 8
+    anisotropicTextures: 1
+    antiAliasing: 0
     softParticles: 1
     softVegetation: 0
     realtimeReflectionProbes: 0
@@ -44,7 +44,7 @@ QualitySettings:
     blendWeights: 2
     textureQuality: 0
     anisotropicTextures: 1
-    antiAliasing: 2
+    antiAliasing: 0
     softParticles: 1
     softVegetation: 1
     realtimeReflectionProbes: 0
