@@ -20,5 +20,10 @@
       <lap time="105716" />
       <lap time="104115" />
     </data>
+    <data playerName="Willem" playerID="4">
+      <lap time="101995" />
+      <lap time="101434" />
+      <lap time="154146" />
+    </data>
   </level>
 </highscore>

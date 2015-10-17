@@ -3473,62 +3473,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a773099f140e846f7835d27351846623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  supportHDRTextures: 1
-  supportDX11: 0
-  isSupported: 1
-  tweakMode: 1
-  screenBlendMode: 1
-  hdr: 1
-  doHdr: 0
-  sepBlurSpread: 2
-  quality: 0
-  bloomIntensity: .800000012
-  bloomThreshhold: 1
-  bloomThreshholdColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  bloomBlurIterations: 2
-  hollywoodFlareBlurIterations: 2
-  flareRotation: 0
-  lensflareMode: 0
-  hollyStretchWidth: 2.5
-  lensflareIntensity: 0
-  lensflareThreshhold: 0
-  lensFlareSaturation: .75
-  flareColorA:
-    r: .400000006
-    g: .400000006
-    b: .800000012
-    a: .75
-  flareColorB:
-    r: .400000006
-    g: .800000012
-    b: .800000012
-    a: .75
-  flareColorC:
-    r: .800000012
-    g: .400000006
-    b: .800000012
-    a: .75
-  flareColorD:
-    r: .800000012
-    g: .400000006
-    b: 0
-    a: .75
-  blurWidth: 1
-  lensFlareVignetteMask: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8,
-    type: 3}
-  lensFlareShader: {fileID: 4800000, guid: 459fe69d2f6d74ddb92f04dbf45a866b, type: 3}
-  lensFlareMaterial: {fileID: 0}
-  screenBlendShader: {fileID: 4800000, guid: 7856cbff0a0ca45c787d5431eb805bb0, type: 3}
-  screenBlend: {fileID: 0}
-  blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
-  blurAndFlaresMaterial: {fileID: 0}
-  brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
-    type: 3}
-  brightPassFilterMaterial: {fileID: 0}
 --- !u!114 &120886419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3541,31 +3485,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9aaa3f5f2d574f228e4a21aa38b61e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  supportHDRTextures: 1
-  supportDX11: 0
-  isSupported: 1
-  mode: 5
-  showGeneratedNormals: 0
-  offsetScale: .200000003
-  blurRadius: 18
-  edgeThresholdMin: .0500000007
-  edgeThreshold: .200000003
-  edgeSharpness: 4
-  dlaaSharp: 0
-  ssaaShader: {fileID: 4800000, guid: b3728d1488b02490cbd196c7941bf1f8, type: 3}
-  ssaa: {fileID: 0}
-  dlaaShader: {fileID: 4800000, guid: 017ca72b9e8a749058d13ebd527e98fa, type: 3}
-  dlaa: {fileID: 0}
-  nfaaShader: {fileID: 4800000, guid: ce0cb2621f6d84e21a87414e471a3cce, type: 3}
-  nfaa: {fileID: 0}
-  shaderFXAAPreset2: {fileID: 4800000, guid: 6f1418cffd12146f2a83be795f6fa5a7, type: 3}
-  materialFXAAPreset2: {fileID: 0}
-  shaderFXAAPreset3: {fileID: 4800000, guid: c182fa94a5a0a4c02870641efcd38cd5, type: 3}
-  materialFXAAPreset3: {fileID: 0}
-  shaderFXAAII: {fileID: 4800000, guid: cd5b323dcc592457790ff18b528f5e67, type: 3}
-  materialFXAAII: {fileID: 0}
-  shaderFXAAIII: {fileID: 4800000, guid: c547503fff0e8482ea5793727057041c, type: 3}
-  materialFXAAIII: {fileID: 0}
 --- !u!124 &120886420
 Behaviour:
   m_ObjectHideFlags: 0
@@ -14391,6 +14310,34 @@ Prefab:
       propertyPath: m_ReflectionProbeUsage
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc6157deb9d2aec4689bb6fa4f7cd9ca, type: 2}
+    - target: {fileID: 2300012, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc6157deb9d2aec4689bb6fa4f7cd9ca, type: 2}
+    - target: {fileID: 10800000, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Color.g
+      value: .976308286
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Color.b
+      value: .141176462
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300004, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7956cf7d8304a3444a4729e30d2394a2, type: 2}
+    - target: {fileID: 2300000, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7956cf7d8304a3444a4729e30d2394a2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
   m_IsPrefabParent: 0
@@ -23744,62 +23691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a773099f140e846f7835d27351846623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  supportHDRTextures: 1
-  supportDX11: 0
-  isSupported: 1
-  tweakMode: 1
-  screenBlendMode: 1
-  hdr: 1
-  doHdr: 0
-  sepBlurSpread: 2
-  quality: 0
-  bloomIntensity: .800000012
-  bloomThreshhold: 1
-  bloomThreshholdColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  bloomBlurIterations: 2
-  hollywoodFlareBlurIterations: 2
-  flareRotation: 0
-  lensflareMode: 0
-  hollyStretchWidth: 2.5
-  lensflareIntensity: 0
-  lensflareThreshhold: 0
-  lensFlareSaturation: .75
-  flareColorA:
-    r: .400000006
-    g: .400000006
-    b: .800000012
-    a: .75
-  flareColorB:
-    r: .400000006
-    g: .800000012
-    b: .800000012
-    a: .75
-  flareColorC:
-    r: .800000012
-    g: .400000006
-    b: .800000012
-    a: .75
-  flareColorD:
-    r: .800000012
-    g: .400000006
-    b: 0
-    a: .75
-  blurWidth: 1
-  lensFlareVignetteMask: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8,
-    type: 3}
-  lensFlareShader: {fileID: 4800000, guid: 459fe69d2f6d74ddb92f04dbf45a866b, type: 3}
-  lensFlareMaterial: {fileID: 0}
-  screenBlendShader: {fileID: 4800000, guid: 7856cbff0a0ca45c787d5431eb805bb0, type: 3}
-  screenBlend: {fileID: 0}
-  blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
-  blurAndFlaresMaterial: {fileID: 0}
-  brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
-    type: 3}
-  brightPassFilterMaterial: {fileID: 0}
 --- !u!114 &1003680812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23812,31 +23703,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9aaa3f5f2d574f228e4a21aa38b61e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  supportHDRTextures: 1
-  supportDX11: 0
-  isSupported: 1
-  mode: 5
-  showGeneratedNormals: 0
-  offsetScale: .200000003
-  blurRadius: 18
-  edgeThresholdMin: .0500000007
-  edgeThreshold: .200000003
-  edgeSharpness: 4
-  dlaaSharp: 0
-  ssaaShader: {fileID: 4800000, guid: b3728d1488b02490cbd196c7941bf1f8, type: 3}
-  ssaa: {fileID: 0}
-  dlaaShader: {fileID: 4800000, guid: 017ca72b9e8a749058d13ebd527e98fa, type: 3}
-  dlaa: {fileID: 0}
-  nfaaShader: {fileID: 4800000, guid: ce0cb2621f6d84e21a87414e471a3cce, type: 3}
-  nfaa: {fileID: 0}
-  shaderFXAAPreset2: {fileID: 4800000, guid: 6f1418cffd12146f2a83be795f6fa5a7, type: 3}
-  materialFXAAPreset2: {fileID: 0}
-  shaderFXAAPreset3: {fileID: 4800000, guid: c182fa94a5a0a4c02870641efcd38cd5, type: 3}
-  materialFXAAPreset3: {fileID: 0}
-  shaderFXAAII: {fileID: 4800000, guid: cd5b323dcc592457790ff18b528f5e67, type: 3}
-  materialFXAAII: {fileID: 0}
-  shaderFXAAIII: {fileID: 4800000, guid: c547503fff0e8482ea5793727057041c, type: 3}
-  materialFXAAIII: {fileID: 0}
 --- !u!81 &1003680813
 AudioListener:
   m_ObjectHideFlags: 0
@@ -39766,6 +39632,34 @@ Prefab:
       propertyPath: m_ReflectionProbeUsage
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5d02652df6eed364f9b01529e19cf0c6, type: 2}
+    - target: {fileID: 2300012, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5d02652df6eed364f9b01529e19cf0c6, type: 2}
+    - target: {fileID: 2300000, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3cbb2185a2151c244ae09ae5555a1808, type: 2}
+    - target: {fileID: 2300004, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3cbb2185a2151c244ae09ae5555a1808, type: 2}
+    - target: {fileID: 10800000, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Color.r
+      value: .97647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Color.g
+      value: .113725491
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
+      propertyPath: m_Color.b
+      value: .80392158
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d1155050c24cf34fbe5c25b65a269ae, type: 2}
   m_IsPrefabParent: 0
@@ -46029,7 +45923,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_RenderMode: 1
-  m_MaxParticleSize: .0500000007
+  m_MaxParticleSize: .100000001
   m_CameraVelocityScale: 0
   m_VelocityScale: .600000024
   m_LengthScale: 0
@@ -46091,7 +45985,7 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 0
     startSpeed:
-      scalar: -3.49000001
+      scalar: -5.19999981
       maxCurve:
         serializedVersion: 2
         m_Curve:
