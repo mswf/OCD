@@ -43,7 +43,7 @@ public class ProfileHandler
 	public Vector3 getLeft()
 	{
 		//return left;
-		return new Vector3(0.5f,0.5f,0.5f);
+		return new Vector3(359, 359, 359);
 	}
 
 	public Vector3 getRight()
