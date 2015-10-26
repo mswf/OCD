@@ -27,3 +27,4 @@ sysinfo.txt
 !*.dll
 !*.obj
 Assets/UnityVS.meta
+OculusDrift.sln.DotSettings
