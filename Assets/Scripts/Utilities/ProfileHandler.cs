@@ -12,7 +12,8 @@ public enum Axis
 	z
 }
 
-public class ProfileHandler {
+public class ProfileHandler
+{
 
 	public struct PlayerName
 	{
@@ -28,25 +29,27 @@ public class ProfileHandler {
 
 	string _filePath = "logs/";
 	string fileName = "prof.xml";
-	
+
 	public int getID()
 	{
 		return id;
 	}
-	
+
 	public string getName()
 	{
-	  	return name;
+		return name;
 	}
-	
+
 	public Vector3 getLeft()
 	{
-		return left;
+		//return left;
+		return new Vector3(0.5f,0.5f,0.5f);
 	}
 
 	public Vector3 getRight()
 	{
-		return right;
+		//return right;
+		return new Vector3(0.5f,0.5f,0.5f);
 	}
 
 	public string getAxis()
@@ -77,10 +80,10 @@ public class ProfileHandler {
 			play.name = playerList[i].Attributes["name"].Value;
 			nameList.Add(play);
 		}
-		
+
 		return nameList;
 	}
-	
+
 	public bool loadProfile(int id)
 	{
 		//check if file exists
@@ -92,7 +95,7 @@ public class ProfileHandler {
 		//instantiate new xmldoc
 		XmlDocument xmlDoc = new XmlDocument();
 		//load from file
-		xmlDoc.Load(_filePath + fileName);		
+		xmlDoc.Load(_filePath + fileName);
 
 		//get all player nodes
 		XmlNodeList playerList = xmlDoc.GetElementsByTagName("player");
@@ -117,7 +120,7 @@ public class ProfileHandler {
 		//init vars
 		name = playerList[index].Attributes["name"].Value;
 		this.id = id;
-		
+
 		//quaternions
 
 		//left
@@ -125,7 +128,7 @@ public class ProfileHandler {
 		float y = float.Parse(playerList[index]["settings"]["left"].Attributes["y"].Value);
 		float z = float.Parse(playerList[index]["settings"]["left"].Attributes["z"].Value);
 		left = new Vector3(x,y,z);
-		
+
 		//right
 		x = float.Parse(playerList[index]["settings"]["right"].Attributes["x"].Value);
 		y = float.Parse(playerList[index]["settings"]["right"].Attributes["y"].Value);
@@ -136,15 +139,15 @@ public class ProfileHandler {
 		string ax = playerList[index]["settings"]["axis"].Attributes["value"].Value;
 		switch (ax)
 		{
-			case "x":
-				axis = Axis.x;
-				break;
-			case "y":
-				axis = Axis.y;
-				break;
-			case "z":
-				axis = Axis.z;
-				break;
+		case "x":
+			axis = Axis.x;
+			break;
+		case "y":
+			axis = Axis.y;
+			break;
+		case "z":
+			axis = Axis.z;
+			break;
 		}
 
 		return true;
@@ -152,7 +155,7 @@ public class ProfileHandler {
 
 	public bool saveProfile(string name, Vector3 eulerLeft, Vector3 eulerRight, Axis axis, int id = -1)
 	{
-		if (id == -1) 
+		if (id == -1)
 		{
 			id = getLastId() + 1;
 			if (id == 0) id++;
@@ -172,7 +175,7 @@ public class ProfileHandler {
 			XmlElement pl = xmlDoc.CreateElement("profile");
 			xmlDoc.AppendChild(pl);
 		}
-		
+
 
 		XmlElement player = null;
 		XmlNodeList playerList = xmlDoc.GetElementsByTagName("player");
