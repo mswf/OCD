@@ -28,7 +28,7 @@ public class WeikiesRiftHack
 
 		if (inverted)
 		{
-			orientation.eulerAngles = -orientation.eulerAngles;
+			orientation.Set(orientation.x, orientation.y, orientation.z, orientation.w);
 		}
 		return orientation;
 	}
