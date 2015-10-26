@@ -8,32 +8,45 @@ using System.Collections;
 
 public class WeikiesRiftHack
 {
+	private static bool inverted = false;
+
+	public static void ToggleInvert()
+	{
+		inverted = !inverted;
+	}
+
 	public static void ResetOrientation()
 	{
 		OVRManager.display.RecenterPose();
 	}
-	
+
 	public static Quaternion GetOrientation()
 	{
 		OVRPose pose = OVRManager.tracker.GetPose(0);
 		//Debug.Log ("Position is tracked: " + OVRManager.tracker.isPositionTracked);
-		return pose.orientation;
+		Quaternion orientation = pose.orientation;
+
+		if (inverted)
+		{
+			orientation.eulerAngles = -orientation.eulerAngles;
+		}
+		return orientation;
 	}
-	
+
 	public static bool IsConnected()
 	{
 		return OVRManager.isHmdPresent;
 	}
-	
+
 	public static void StereoBox(float x, float y, float width, float height, ref string text, Color color)
 	{
 		//GuiHelper.StereoBox(autoPilotX, autoPilotY, autoPilotW, autoPilotH, ref finishText, textColor);
-		
+
 	}
-	
+
 	public static void StereoDrawTexture(float x, float y, float width, float height, ref Texture text, Color color)
 	{
 		//GuiHelper.StereoDrawTexture(picturePosX, picturePosY, pictureSizeX, pictureSizeY, ref image, pictureColor);
 	}
-	
+
 }
