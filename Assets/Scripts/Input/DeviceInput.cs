@@ -18,7 +18,7 @@ public class DeviceInput : MonoBehaviour
 	private float _leftMiddle;
 	private float _rightMiddle;
 	private float _middle;
-	private bool inverted = false;
+	private bool inverted = true;
 
 	static public float valueH
 	{
@@ -83,23 +83,22 @@ public class DeviceInput : MonoBehaviour
 		{
 			inverted = !inverted;
 		}
+
+		if (Input.GetKeyDown(KeyCode.R))
+		{
+			WeikiesRiftHack.ResetOrientation();
+		}
 	}
 
 	void FixedUpdate()
 	{
 		_orientation = 0;
 		float multiplier = 3f;
-
 		//OVRDevice.SensorCount > 0
 		if (WeikiesRiftHack.IsConnected() && !_isVRControlsDisabled)
 		{
 			//Quaternion q = WeikiesRiftHack.GetOrientation();
-
-			Quaternion q = rig.centerEyeAnchor.rotation;
-			if (inverted)
-			{
-				q = new Quaternion(-q.x, -q.y, -q.z, q.w);
-			}
+			Quaternion q = rig.centerEyeAnchor.localRotation;
 
 			switch (axis)
 			{
@@ -200,6 +199,11 @@ public class DeviceInput : MonoBehaviour
 			_orientation = 1.0f;
 		}
 
+
+		if (inverted)
+		{
+			_orientation = -_orientation;
+		}
 		//Debug.Log(_orientation);
 
 	}
