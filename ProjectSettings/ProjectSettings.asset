@@ -159,13 +159,29 @@ PlayerSettings:
     height: 180
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
-  resolutionDialogBanner: {fileID: 2800000, guid: cc3f76c1d7bfd0e409f7297601898b02,
+  resolutionDialogBanner: {fileID: 2800000, guid: 16c930cb58f49ed449196c6704944366,
     type: 3}
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
     - m_Icon: {fileID: 2800000, guid: d6acd78967b1dcf4f895409867177070, type: 3}
       m_Size: 128
+  - m_BuildTarget: Standalone
+    m_Icons:
+    - m_Icon: {fileID: 2800000, guid: d6acd78967b1dcf4f895409867177070, type: 3}
+      m_Size: 1024
+    - m_Icon: {fileID: 2800000, guid: d6acd78967b1dcf4f895409867177070, type: 3}
+      m_Size: 512
+    - m_Icon: {fileID: 2800000, guid: d6acd78967b1dcf4f895409867177070, type: 3}
+      m_Size: 256
+    - m_Icon: {fileID: 2800000, guid: d6acd78967b1dcf4f895409867177070, type: 3}
+      m_Size: 128
+    - m_Icon: {fileID: 2800000, guid: d6acd78967b1dcf4f895409867177070, type: 3}
+      m_Size: 48
+    - m_Icon: {fileID: 2800000, guid: d6acd78967b1dcf4f895409867177070, type: 3}
+      m_Size: 32
+    - m_Icon: {fileID: 2800000, guid: d6acd78967b1dcf4f895409867177070, type: 3}
+      m_Size: 16
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
     m_StaticBatching: 1
