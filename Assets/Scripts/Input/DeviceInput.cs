@@ -18,7 +18,7 @@ public class DeviceInput : MonoBehaviour
 	private float _leftMiddle;
 	private float _rightMiddle;
 	private float _middle;
-	private bool inverted = false;
+	private bool inverted = true;
 
 	static public float valueH
 	{
