@@ -95,11 +95,7 @@ public class DeviceInput : MonoBehaviour
 		{
 			//Quaternion q = WeikiesRiftHack.GetOrientation();
 
-			Quaternion q = rig.centerEyeAnchor.rotation;
-			if (inverted)
-			{
-				q = new Quaternion(-q.x, -q.y, -q.z, q.w);
-			}
+			Quaternion q = rig.centerEyeAnchor.localRotation;
 
 			switch (axis)
 			{
@@ -200,6 +196,11 @@ public class DeviceInput : MonoBehaviour
 			_orientation = 1.0f;
 		}
 
+
+		if (inverted)
+		{
+			_orientation = -_orientation;
+		}
 		//Debug.Log(_orientation);
 
 	}
