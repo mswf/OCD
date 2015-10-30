@@ -35,7 +35,7 @@ public class WeikiesRiftHack
 
 	public static bool IsConnected()
 	{
-		return OVRManager.isHmdPresent;
+		return true; //OVRManager.isHmdPresent;
 	}
 
 	public static void StereoBox(float x, float y, float width, float height, ref string text, Color color)

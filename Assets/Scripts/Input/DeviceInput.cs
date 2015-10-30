@@ -83,18 +83,21 @@ public class DeviceInput : MonoBehaviour
 		{
 			inverted = !inverted;
 		}
+
+		if (Input.GetKeyDown(KeyCode.R))
+		{
+			WeikiesRiftHack.ResetOrientation();
+		}
 	}
 
 	void FixedUpdate()
 	{
 		_orientation = 0;
 		float multiplier = 3f;
-
 		//OVRDevice.SensorCount > 0
 		if (WeikiesRiftHack.IsConnected() && !_isVRControlsDisabled)
 		{
 			//Quaternion q = WeikiesRiftHack.GetOrientation();
-
 			Quaternion q = rig.centerEyeAnchor.localRotation;
 
 			switch (axis)
