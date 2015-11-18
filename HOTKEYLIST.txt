@@ -1,0 +1,4 @@
+R = reset orientation
+F = invert
+O = toggle control
+P = autopilot
